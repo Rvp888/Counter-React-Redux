@@ -33,11 +33,20 @@ body {
 }
 
 .quantity {
+  margin-top: 20px;
   background-color: #787676;
   width: 200px;
   height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
 }
 
 .quantity_input {
-  height: 100%;
+  height: 90%;
+  width: 50%;
+  font-size: 35px;
 }
