@@ -1,6 +1,7 @@
 
 import './App.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { decNumber, incNumber } from './actions/index';
 
 
 
@@ -8,6 +9,7 @@ import { useSelector } from 'react-redux';
 function App() {
 
   const myState = useSelector((store) => store.changeTheNumber);
+  const dispatch = useDispatch();
 
   return (
     <div className='container'>
@@ -16,9 +18,9 @@ function App() {
       <h4>using React and Redux</h4>
 
       <div className='quantity'>
-        <a className='quantity_minus' title='Decrement' ><span>-</span></a>
+        <a className='quantity_minus' title='Decrement' ><span onClick={() => dispatch(decNumber())}> - </span></a>
         <input name='quantity' type='text' className='quantity_input' value={myState} />
-        <a className='quantity_plus' title='Increment' ><span>+</span></a>
+        <a className='quantity_plus' title='Increment' ><span onClick={() => dispatch(incNumber())}> + </span></a>
       </div>
       
     </div>
