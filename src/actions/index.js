@@ -1,5 +1,14 @@
 
 
-export const incNumber = () => { type: 'INCREMENT' };
+export const incNumber = () => { 
+    return {
+        type: 'INCREMENT'
+    }   
+};
 
-export const decNumber = () => { type: 'DECREMENT' };
+
+export const decNumber = () => { 
+    return {
+        type: 'DECREMENT'
+    }     
+};
