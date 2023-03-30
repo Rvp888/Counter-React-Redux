@@ -20,7 +20,7 @@ function App() {
       <div className='quantity'>
         <a className='quantity_minus' title='Decrement' ><span onClick={() => dispatch(decNumber())}> - </span></a>
         <input name='quantity' type='text' className='quantity_input' value={myState} />
-        <a className='quantity_plus' title='Increment' ><span onClick={() => dispatch(incNumber())}> + </span></a>
+        <a className='quantity_plus' title='Increment' ><span onClick={() => dispatch(incNumber(5))}> + </span></a>
       </div>
       
     </div>
