@@ -1,4 +1,9 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   display: flex;
@@ -21,7 +26,18 @@ body {
 }
 
 .container h4 {
-  color: rgb(103, 113, 133);
-  font-size: 20px;
+  color: rgb(79, 82, 89);
+  font-size: 25px;
   font-weight: 800;
+  margin-top: 10px;
+}
+
+.quantity {
+  background-color: #787676;
+  width: 200px;
+  height: 50px;
+}
+
+.quantity_input {
+  height: 100%;
 }
